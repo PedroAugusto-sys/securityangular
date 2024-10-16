@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'securityangular' title`, () => {
+  it(`should have the 'webSecurity' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('securityangular');
+    expect(app.title).toEqual('webSecurity');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, securityangular');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, webSecurity');
   });
 });
